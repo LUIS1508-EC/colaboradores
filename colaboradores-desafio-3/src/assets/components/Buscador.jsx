@@ -7,7 +7,7 @@ const Buscador = ({buscaColaborador}) => {
     
         <form>
     
-            <input type="search" placeholder="Busca aca al colaborador" onChange={enviar} className="form-control" role="search"/>
+            <input type="search" placeholder="Busca aca al colaborador" onChange={enviar} className="form-control"/>
     
         </form>
     )

@@ -2,10 +2,10 @@
   display: grid;
   grid-template-areas:
     "titulo1"
-    "buscador"
-    "listado"
+    "busqueda"
+    "lista"
     "titulo2"
-    "formulario"
+    "tabla"
     "alerta";
   grid-template-columns: 1fr;
   color: brown;
@@ -21,18 +21,18 @@
   text-align: center;
 }
 #buscador {
-  grid-area: buscador;
+  grid-area: busqueda;
 }
 #listado {
   margin-top: 10px;
   width: 90%;
-  grid-area: listado;
+  grid-area: lista;
   margin-bottom: 50px;
   font-size: 10px;
 }
 #formulario {
   width: 90%;
-  grid-area: formulario;
+  grid-area: tabla;
   margin: auto;
 }
 #formulario button {
@@ -61,10 +61,10 @@ input{
   .container-fluid {
     grid-template-areas:
       "titulo1 titulo1"
-      "buscador buscador"
-      "listado titulo2"
-      "listado formulario"
-      "listado alerta";
+      "busqueda busqueda"
+      "lista titulo2"
+      "lista tabla"
+      "lista alerta";
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 4fr 1fr;
   }
@@ -78,7 +78,7 @@ input{
   }
 
   #listado {
-    grid-area: listado;
+    grid-area: lista;
     font-size: 1rem;
   }
 
@@ -88,7 +88,7 @@ input{
   }
 
   #buscador {
-    grid-area: buscador;
+    grid-area: busqueda;
     margin-bottom: 20px;
   }
 
@@ -98,7 +98,7 @@ input{
 
   #formulario {
     width: 100%;
-    grid-area: formulario;
+    grid-area: tabla;
   }
 
   #alerta {

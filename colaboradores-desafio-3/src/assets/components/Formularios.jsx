@@ -55,7 +55,7 @@ const Formulario = ({ colaboradores, setColaboradores, setAlerta }) => {
             <div className="mb-3">
                 <input type="text" placeholder="Teléfono del colaborador" value={telefono} onChange={(e) => setTelefono(e.target.value)}/>
             </div>         
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-secondary">
                 Agregar colaborador
             </button>
         </form>
