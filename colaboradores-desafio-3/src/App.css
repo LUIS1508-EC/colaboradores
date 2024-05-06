@@ -1,0 +1,120 @@
+.container-fluid {
+  display: grid;
+  grid-template-areas:
+    "titulo1"
+    "buscador"
+    "listado"
+    "titulo2"
+    "formulario"
+    "alerta";
+  grid-template-columns: 1fr;
+  color: brown;
+}
+.titulo1 {
+  grid-area: titulo1;
+  margin-top: 20px;
+  text-align: center;
+}
+.titulo2 {
+  grid-area: titulo2;
+  margin-top: 20px;
+  text-align: center;
+}
+#buscador {
+  grid-area: buscador;
+}
+#listado {
+  margin-top: 10px;
+  width: 90%;
+  grid-area: listado;
+  margin-bottom: 50px;
+  font-size: 10px;
+}
+#formulario {
+  width: 90%;
+  grid-area: formulario;
+  margin: auto;
+}
+#formulario button {
+  width: 100%;
+}
+#alerta {
+  grid-area: alerta;
+  width: 90%;
+  margin: auto;
+}
+
+input{
+
+  border: 2px solid rgb(20, 22, 20);
+  border-radius: 5px;
+  padding: 0 15px;
+  color: black;
+}
+  input::placeholder{
+
+    color:black;
+  }
+
+
+@media (min-width: 992px) {
+  .container-fluid {
+    grid-template-areas:
+      "titulo1 titulo1"
+      "buscador buscador"
+      "listado titulo2"
+      "listado formulario"
+      "listado alerta";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 4fr 1fr;
+  }
+
+  .titulo1 {
+    text-align: left;
+  }
+
+  .titulo2 {
+    text-align: left;
+  }
+
+  #listado {
+    grid-area: listado;
+    font-size: 1rem;
+  }
+
+  #listado table {
+    text-align: center;
+    width: 100%;
+  }
+
+  #buscador {
+    grid-area: buscador;
+    margin-bottom: 20px;
+  }
+
+  #buscador input {
+    width: 75%;
+  }
+
+  #formulario {
+    width: 100%;
+    grid-area: formulario;
+  }
+
+  #alerta {
+    width: 100%;
+  }
+
+  input{
+
+    border: 2px solid rgb(20, 22, 20);
+    border-radius: 5px;
+    padding: 0 15px;
+    color: black;
+  }
+    input::placeholder{
+  
+      color:black;
+    }
+
+}
