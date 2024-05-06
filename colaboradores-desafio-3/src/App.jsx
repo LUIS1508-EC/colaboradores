@@ -19,10 +19,10 @@ function App() {
         <div className="row titulo1">
           <h1>Lista de Colaboradores</h1>
         </div>
-        <div className="row" id="buscador">
+        <div className="row buscador">
           <Buscador buscaColaborador={setBuscar} />
         </div>
-        <div id="listado">
+        <div className='lista'>
           <Listado
             colaboradores={colaboradores}
             buscaColaborador={buscar}
@@ -31,7 +31,7 @@ function App() {
         <div className='titulo2'>
           <h4 className="mb-2 pb-2">Agregar colaborador</h4>
         </div>
-        <div id="formulario">
+        <div className='formu'>
           <Formulario
             colaboradores={colaboradores}
             setColaboradores={setColaboradores}
@@ -39,7 +39,7 @@ function App() {
             alerta = {alerta}
           />
         </div>
-        <div id="alerta">
+        <div className='alerta'>
           {alerta.error ? (
             <Alert mensaje={alerta.mensaje} color={alerta.color} />
           ) : null}

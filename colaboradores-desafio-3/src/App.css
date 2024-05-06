@@ -10,6 +10,33 @@
   grid-template-columns: 1fr;
   color: brown;
 }
+
+.formu {
+  width: 100%;
+  grid-area: tabla;
+  margin: auto;
+}
+
+
+.lista {
+  margin-top: 10px;
+  width: 90%;
+  grid-area: lista;
+  margin-bottom: 50px;
+  font-size: 10px;
+}
+
+button {
+  width: 100%;
+}
+#alerta {
+  grid-area: alerta;
+  width: 90%;
+  margin: auto;
+}
+.buscador {
+  grid-area: busqueda;
+}
 .titulo1 {
   grid-area: titulo1;
   margin-top: 20px;
@@ -20,30 +47,6 @@
   margin-top: 20px;
   text-align: center;
 }
-#buscador {
-  grid-area: busqueda;
-}
-#listado {
-  margin-top: 10px;
-  width: 90%;
-  grid-area: lista;
-  margin-bottom: 50px;
-  font-size: 10px;
-}
-#formulario {
-  width: 90%;
-  grid-area: tabla;
-  margin: auto;
-}
-#formulario button {
-  width: 100%;
-}
-#alerta {
-  grid-area: alerta;
-  width: 90%;
-  margin: auto;
-}
-
 input{
 
   border: 2px solid rgb(20, 22, 20);
@@ -68,6 +71,31 @@ input{
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 4fr 1fr;
   }
+  .formu {
+    width: 100%;
+    grid-area: tabla;
+  }
+  
+
+  .lista {
+    grid-area: lista;
+    font-size: 1rem;
+  }
+
+  .lista table {
+    text-align: center;
+    width: 100%;
+  }
+
+  .buscador {
+    grid-area: busqueda;
+    margin-bottom: 20px;
+  }
+
+  .buscador input {
+    width: 75%;
+  }
+
 
   .titulo1 {
     text-align: left;
@@ -76,32 +104,7 @@ input{
   .titulo2 {
     text-align: left;
   }
-
-  #listado {
-    grid-area: lista;
-    font-size: 1rem;
-  }
-
-  #listado table {
-    text-align: center;
-    width: 100%;
-  }
-
-  #buscador {
-    grid-area: busqueda;
-    margin-bottom: 20px;
-  }
-
-  #buscador input {
-    width: 75%;
-  }
-
-  #formulario {
-    width: 100%;
-    grid-area: tabla;
-  }
-
-  #alerta {
+  .alerta {
     width: 100%;
   }
 
